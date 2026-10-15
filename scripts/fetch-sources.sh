@@ -5,7 +5,7 @@ set -euo pipefail
 root=$(cd "$(dirname "$0")/.." && pwd)
 dest=${SOURCES_DIR:-$root/sources}
 mkdir -p "$dest"
-ua='ffmpeg-builds (+https://github.com/wallpaper-reactor/ffmpeg-builds)'
+ua='ffmpeg (+https://github.com/wallpaper-reactor/ffmpeg)'
 
 sha256() { if command -v sha256sum >/dev/null; then sha256sum "$1"; else shasum -a 256 "$1"; fi | cut -d' ' -f1; }
 

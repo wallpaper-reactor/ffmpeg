@@ -1,10 +1,10 @@
-# ffmpeg-builds
+# ffmpeg
 
 Small static builds of FFmpeg with x264, made for
 [Wallpaper Reactor](https://wallpaperreactor.app)'s `wr` command line tool, which downloads
 one on first use to encode and check wallpaper videos.
 
-Each [release](https://github.com/wallpaper-reactor/ffmpeg-builds/releases) carries, for
+Each [release](https://github.com/wallpaper-reactor/ffmpeg/releases) carries, for
 Windows x64, Linux x64 and arm64, and macOS arm64 and x86_64:
 
 - `ffmpeg-<version>-<build>-<target>.zip`: `ffmpeg`, `ffprobe`, `COPYING.GPLv2` and

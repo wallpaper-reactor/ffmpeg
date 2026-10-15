@@ -101,7 +101,7 @@ cp "$work/ffmpeg/ffmpeg$exe" "$work/ffmpeg/ffprobe$exe" "$stage/"
 tar -xOf "$src/ffmpeg-$FFMPEG_VERSION.tar.xz" "ffmpeg-$FFMPEG_VERSION/COPYING.GPLv2" > "$stage/COPYING.GPLv2"
 {
   echo "FFmpeg $FFMPEG_VERSION with x264 ($X264_COMMIT) and zlib $ZLIB_VERSION, built by"
-  echo "https://github.com/wallpaper-reactor/ffmpeg-builds ($BUILD, target $target)."
+  echo "https://github.com/wallpaper-reactor/ffmpeg ($BUILD, target $target)."
   echo
   echo "Licence: GPL-2.0-or-later (FFmpeg built with --enable-gpl, x264 is GPL-2.0-or-later,"
   echo "zlib is under the zlib licence). No nonfree components. See COPYING.GPLv2."
@@ -109,7 +109,7 @@ tar -xOf "$src/ffmpeg-$FFMPEG_VERSION.tar.xz" "ffmpeg-$FFMPEG_VERSION/COPYING.GP
   echo "Corresponding source: the release this archive came from carries"
   echo "ffmpeg-$FFMPEG_VERSION-$BUILD-source.tar, holding the exact upstream tarballs and the"
   echo "scripts that built this archive:"
-  echo "https://github.com/wallpaper-reactor/ffmpeg-builds/releases/tag/$FFMPEG_VERSION-$BUILD"
+  echo "https://github.com/wallpaper-reactor/ffmpeg/releases/tag/$FFMPEG_VERSION-$BUILD"
   echo
   echo "configure: ${configure[*]}" | sed "s|$root|.|g"
 } > "$stage/SOURCE.txt"
